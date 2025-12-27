@@ -1,5 +1,6 @@
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import Header from "@/components/Header";
+import { Button } from "@/components/ui/button"; // Added this import
 
 const Index = () => {
   return (
