@@ -62,11 +62,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Lekkersite Custom Colors
+        "lekker-primary-blue": "hsl(var(--lekker-primary-blue))",
+        "lekker-secondary-coral": "hsl(var(--lekker-secondary-coral))",
+        "lekker-neutral-dark": "hsl(var(--lekker-neutral-dark))",
+        "lekker-neutral-light": "hsl(var(--lekker-neutral-light))",
+        "lekker-success": "hsl(var(--lekker-success))",
+        "lekker-error": "hsl(var(--lekker-error))",
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "16px", // For cards
+        md: "8px",  // For buttons
+        sm: "4px",
+        full: "9999px", // For badges
       },
       keyframes: {
         "accordion-down": {
@@ -90,6 +98,13 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        heading: ["Plus Jakarta Sans", "sans-serif"],
+      },
+      boxShadow: {
+        'soft-layered': '0 4px 20px rgba(0,0,0,0.08)',
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
